@@ -1,0 +1,32 @@
+cabal-version:      3.0
+name:               streamly-pure-zlib
+version:            0.1.0.0
+-- synopsis:
+-- description:
+homepage:           https://github.com/prutz1311/streamly-pure-zlib
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Oleg Prutz
+maintainer:         olegp04728@gmail.com
+-- copyright:
+category:           Codec
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  Codec.Compression.Zlib.Streamly
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base
+                    , bytestring
+                    , primitive
+                    , exceptions
+                    , streamly-core
+                    , pure-zlib
+    hs-source-dirs:   src
+    default-language: Haskell2010

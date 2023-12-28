@@ -1,0 +1,6 @@
+packages: ./*.cabal
+
+source-repository-package
+  type: git
+  location: https://github.com/prutz1311/pure-zlib.git
+  tag: 975c284a6b913390f66defd6f444281e31187f56
